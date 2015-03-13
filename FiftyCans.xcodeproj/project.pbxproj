@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC3169BE1AB353D2000AFD8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3169BD1AB353D2000AFD8D /* main.m */; };
+		FC3169C11AB353D2000AFD8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3169C01AB353D2000AFD8D /* AppDelegate.m */; };
+		FC3169C41AB353D2000AFD8D /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3169C31AB353D2000AFD8D /* GameScene.m */; };
+		FC3169C61AB353D2000AFD8D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FC3169C51AB353D2000AFD8D /* GameScene.sks */; };
+		FC3169C91AB353D2000AFD8D /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3169C81AB353D2000AFD8D /* GameViewController.m */; };
+		FC3169CC1AB353D2000AFD8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3169CA1AB353D2000AFD8D /* Main.storyboard */; };
+		FC3169CE1AB353D2000AFD8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3169CD1AB353D2000AFD8D /* Images.xcassets */; };
+		FC3169D11AB353D2000AFD8D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC3169CF1AB353D2000AFD8D /* LaunchScreen.xib */; };
+		FC3169DD1AB353D2000AFD8D /* FiftyCansTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3169DC1AB353D2000AFD8D /* FiftyCansTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC3169D71AB353D2000AFD8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC3169B01AB353D1000AFD8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC3169B71AB353D2000AFD8D;
+			remoteInfo = FiftyCans;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC3169B81AB353D2000AFD8D /* FiftyCans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiftyCans.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3169BC1AB353D2000AFD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC3169BD1AB353D2000AFD8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC3169BF1AB353D2000AFD8D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC3169C01AB353D2000AFD8D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC3169C21AB353D2000AFD8D /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		FC3169C31AB353D2000AFD8D /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		FC3169C51AB353D2000AFD8D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		FC3169C71AB353D2000AFD8D /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		FC3169C81AB353D2000AFD8D /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		FC3169CB1AB353D2000AFD8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC3169CD1AB353D2000AFD8D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FC3169D01AB353D2000AFD8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FC3169D61AB353D2000AFD8D /* FiftyCansTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiftyCansTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3169DB1AB353D2000AFD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC3169DC1AB353D2000AFD8D /* FiftyCansTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FiftyCansTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC3169B51AB353D2000AFD8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC3169D31AB353D2000AFD8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC3169AF1AB353D1000AFD8D = {
+			isa = PBXGroup;
+			children = (
+				FC3169BA1AB353D2000AFD8D /* FiftyCans */,
+				FC3169D91AB353D2000AFD8D /* FiftyCansTests */,
+				FC3169B91AB353D2000AFD8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC3169B91AB353D2000AFD8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC3169B81AB353D2000AFD8D /* FiftyCans.app */,
+				FC3169D61AB353D2000AFD8D /* FiftyCansTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC3169BA1AB353D2000AFD8D /* FiftyCans */ = {
+			isa = PBXGroup;
+			children = (
+				FC3169BF1AB353D2000AFD8D /* AppDelegate.h */,
+				FC3169C01AB353D2000AFD8D /* AppDelegate.m */,
+				FC3169C21AB353D2000AFD8D /* GameScene.h */,
+				FC3169C31AB353D2000AFD8D /* GameScene.m */,
+				FC3169C51AB353D2000AFD8D /* GameScene.sks */,
+				FC3169C71AB353D2000AFD8D /* GameViewController.h */,
+				FC3169C81AB353D2000AFD8D /* GameViewController.m */,
+				FC3169CA1AB353D2000AFD8D /* Main.storyboard */,
+				FC3169CD1AB353D2000AFD8D /* Images.xcassets */,
+				FC3169CF1AB353D2000AFD8D /* LaunchScreen.xib */,
+				FC3169BB1AB353D2000AFD8D /* Supporting Files */,
+			);
+			path = FiftyCans;
+			sourceTree = "<group>";
+		};
+		FC3169BB1AB353D2000AFD8D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC3169BC1AB353D2000AFD8D /* Info.plist */,
+				FC3169BD1AB353D2000AFD8D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC3169D91AB353D2000AFD8D /* FiftyCansTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC3169DC1AB353D2000AFD8D /* FiftyCansTests.m */,
+				FC3169DA1AB353D2000AFD8D /* Supporting Files */,
+			);
+			path = FiftyCansTests;
+			sourceTree = "<group>";
+		};
+		FC3169DA1AB353D2000AFD8D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC3169DB1AB353D2000AFD8D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC3169B71AB353D2000AFD8D /* FiftyCans */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC3169E01AB353D2000AFD8D /* Build configuration list for PBXNativeTarget "FiftyCans" */;
+			buildPhases = (
+				FC3169B41AB353D2000AFD8D /* Sources */,
+				FC3169B51AB353D2000AFD8D /* Frameworks */,
+				FC3169B61AB353D2000AFD8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FiftyCans;
+			productName = FiftyCans;
+			productReference = FC3169B81AB353D2000AFD8D /* FiftyCans.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC3169D51AB353D2000AFD8D /* FiftyCansTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC3169E31AB353D2000AFD8D /* Build configuration list for PBXNativeTarget "FiftyCansTests" */;
+			buildPhases = (
+				FC3169D21AB353D2000AFD8D /* Sources */,
+				FC3169D31AB353D2000AFD8D /* Frameworks */,
+				FC3169D41AB353D2000AFD8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC3169D81AB353D2000AFD8D /* PBXTargetDependency */,
+			);
+			name = FiftyCansTests;
+			productName = FiftyCansTests;
+			productReference = FC3169D61AB353D2000AFD8D /* FiftyCansTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC3169B01AB353D1000AFD8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = DoSomething.org;
+				TargetAttributes = {
+					FC3169B71AB353D2000AFD8D = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					FC3169D51AB353D2000AFD8D = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = FC3169B71AB353D2000AFD8D;
+					};
+				};
+			};
+			buildConfigurationList = FC3169B31AB353D1000AFD8D /* Build configuration list for PBXProject "FiftyCans" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC3169AF1AB353D1000AFD8D;
+			productRefGroup = FC3169B91AB353D2000AFD8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC3169B71AB353D2000AFD8D /* FiftyCans */,
+				FC3169D51AB353D2000AFD8D /* FiftyCansTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC3169B61AB353D2000AFD8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3169D11AB353D2000AFD8D /* LaunchScreen.xib in Resources */,
+				FC3169CE1AB353D2000AFD8D /* Images.xcassets in Resources */,
+				FC3169C61AB353D2000AFD8D /* GameScene.sks in Resources */,
+				FC3169CC1AB353D2000AFD8D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC3169D41AB353D2000AFD8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC3169B41AB353D2000AFD8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3169C91AB353D2000AFD8D /* GameViewController.m in Sources */,
+				FC3169C11AB353D2000AFD8D /* AppDelegate.m in Sources */,
+				FC3169C41AB353D2000AFD8D /* GameScene.m in Sources */,
+				FC3169BE1AB353D2000AFD8D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC3169D21AB353D2000AFD8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3169DD1AB353D2000AFD8D /* FiftyCansTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC3169D81AB353D2000AFD8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC3169B71AB353D2000AFD8D /* FiftyCans */;
+			targetProxy = FC3169D71AB353D2000AFD8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC3169CA1AB353D2000AFD8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC3169CB1AB353D2000AFD8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC3169CF1AB353D2000AFD8D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC3169D01AB353D2000AFD8D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC3169DE1AB353D2000AFD8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FC3169DF1AB353D2000AFD8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC3169E11AB353D2000AFD8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FiftyCans/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FC3169E21AB353D2000AFD8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FiftyCans/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FC3169E41AB353D2000AFD8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FiftyCansTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FiftyCans.app/FiftyCans";
+			};
+			name = Debug;
+		};
+		FC3169E51AB353D2000AFD8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FiftyCansTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FiftyCans.app/FiftyCans";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC3169B31AB353D1000AFD8D /* Build configuration list for PBXProject "FiftyCans" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC3169DE1AB353D2000AFD8D /* Debug */,
+				FC3169DF1AB353D2000AFD8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC3169E01AB353D2000AFD8D /* Build configuration list for PBXNativeTarget "FiftyCans" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC3169E11AB353D2000AFD8D /* Debug */,
+				FC3169E21AB353D2000AFD8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FC3169E31AB353D2000AFD8D /* Build configuration list for PBXNativeTarget "FiftyCansTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC3169E41AB353D2000AFD8D /* Debug */,
+				FC3169E51AB353D2000AFD8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC3169B01AB353D1000AFD8D /* Project object */;
+}
