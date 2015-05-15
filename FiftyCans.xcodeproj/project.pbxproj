@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B22BB83E1B064B0300AE6BF1 /* can-tuna.png in Resources */ = {isa = PBXBuildFile; fileRef = B22BB83D1B064B0300AE6BF1 /* can-tuna.png */; };
+		B22BB8771B06627D00AE6BF1 /* console-color.png in Resources */ = {isa = PBXBuildFile; fileRef = B22BB8761B06627D00AE6BF1 /* console-color.png */; };
+		B22BB87B1B0678AC00AE6BF1 /* laser.png in Resources */ = {isa = PBXBuildFile; fileRef = B22BB87A1B0678AC00AE6BF1 /* laser.png */; };
 		FC3169BE1AB353D2000AFD8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3169BD1AB353D2000AFD8D /* main.m */; };
 		FC3169C11AB353D2000AFD8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3169C01AB353D2000AFD8D /* AppDelegate.m */; };
 		FC3169C41AB353D2000AFD8D /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3169C31AB353D2000AFD8D /* GameScene.m */; };
@@ -29,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B22BB83D1B064B0300AE6BF1 /* can-tuna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "can-tuna.png"; sourceTree = "<group>"; };
+		B22BB8761B06627D00AE6BF1 /* console-color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "console-color.png"; sourceTree = "<group>"; };
+		B22BB87A1B0678AC00AE6BF1 /* laser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laser.png; sourceTree = "<group>"; };
 		FC3169B81AB353D2000AFD8D /* FiftyCans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiftyCans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3169BC1AB353D2000AFD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC3169BD1AB353D2000AFD8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -104,6 +110,9 @@
 		FC3169BB1AB353D2000AFD8D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B22BB83D1B064B0300AE6BF1 /* can-tuna.png */,
+				B22BB8761B06627D00AE6BF1 /* console-color.png */,
+				B22BB87A1B0678AC00AE6BF1 /* laser.png */,
 				FC3169BC1AB353D2000AFD8D /* Info.plist */,
 				FC3169BD1AB353D2000AFD8D /* main.m */,
 			);
@@ -208,7 +217,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC3169D11AB353D2000AFD8D /* LaunchScreen.xib in Resources */,
+				B22BB8771B06627D00AE6BF1 /* console-color.png in Resources */,
 				FC3169CE1AB353D2000AFD8D /* Images.xcassets in Resources */,
+				B22BB87B1B0678AC00AE6BF1 /* laser.png in Resources */,
+				B22BB83E1B064B0300AE6BF1 /* can-tuna.png in Resources */,
 				FC3169C61AB353D2000AFD8D /* GameScene.sks in Resources */,
 				FC3169CC1AB353D2000AFD8D /* Main.storyboard in Resources */,
 			);
@@ -422,6 +434,7 @@
 				FC3169E21AB353D2000AFD8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC3169E31AB353D2000AFD8D /* Build configuration list for PBXNativeTarget "FiftyCansTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +443,7 @@
 				FC3169E51AB353D2000AFD8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
