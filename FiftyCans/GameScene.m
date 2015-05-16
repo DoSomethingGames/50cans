@@ -14,6 +14,7 @@ static const uint32_t canCategory        =  0x1 << 1;
 @property (nonatomic) SKSpriteNode *player;
 @property (nonatomic) NSTimeInterval lastSpawnTimeInterval;
 @property (nonatomic) NSTimeInterval lastUpdateTimeInterval;
+@property (nonatomic, strong) NSMutableArray *canImages;
 @end
 
 static inline CGPoint rwAdd(CGPoint a, CGPoint b) {
@@ -48,12 +49,16 @@ static inline CGPoint rwNormalize(CGPoint a) {
     [self addChild:self.player];
     self.physicsWorld.gravity = CGVectorMake(0,0);
     self.physicsWorld.contactDelegate = self;
-
+    self.canImages = [[NSMutableArray alloc] init];
+    self.canImages[0] = @"can-tuna";
+    self.canImages[1] = @"can-soda";
+    self.canImages[2] = @"can-soup";
     [self addCan];
 }
 
 - (void)addCan {
-    SKSpriteNode *can = [SKSpriteNode spriteNodeWithImageNamed:@"can-tuna"];
+    NSString *fileName = self.canImages[arc4random_uniform(3)];
+    SKSpriteNode *can = [SKSpriteNode spriteNodeWithImageNamed:fileName];
     can.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:can.size];
     can.physicsBody.dynamic = YES;
     can.physicsBody.categoryBitMask = canCategory;
