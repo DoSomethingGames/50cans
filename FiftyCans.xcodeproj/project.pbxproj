@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2076EAD1B0FD7FE00C3A4F7 /* DSOExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = B2076EAB1B0FD7FE00C3A4F7 /* DSOExplosion.sks */; };
+		B2076EAE1B0FD7FE00C3A4F7 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = B2076EAC1B0FD7FE00C3A4F7 /* spark.png */; };
 		B22BB83E1B064B0300AE6BF1 /* can-tuna.png in Resources */ = {isa = PBXBuildFile; fileRef = B22BB83D1B064B0300AE6BF1 /* can-tuna.png */; };
 		B22BB8771B06627D00AE6BF1 /* console-color.png in Resources */ = {isa = PBXBuildFile; fileRef = B22BB8761B06627D00AE6BF1 /* console-color.png */; };
 		B22BB87B1B0678AC00AE6BF1 /* laser.png in Resources */ = {isa = PBXBuildFile; fileRef = B22BB87A1B0678AC00AE6BF1 /* laser.png */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B2076EAB1B0FD7FE00C3A4F7 /* DSOExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = DSOExplosion.sks; sourceTree = "<group>"; };
+		B2076EAC1B0FD7FE00C3A4F7 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		B22BB83D1B064B0300AE6BF1 /* can-tuna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "can-tuna.png"; sourceTree = "<group>"; };
 		B22BB8761B06627D00AE6BF1 /* console-color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "console-color.png"; sourceTree = "<group>"; };
 		B22BB87A1B0678AC00AE6BF1 /* laser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laser.png; sourceTree = "<group>"; };
@@ -107,6 +111,8 @@
 				FC3169CD1AB353D2000AFD8D /* Images.xcassets */,
 				FC3169CF1AB353D2000AFD8D /* LaunchScreen.xib */,
 				FC3169BB1AB353D2000AFD8D /* Supporting Files */,
+				B2076EAB1B0FD7FE00C3A4F7 /* DSOExplosion.sks */,
+				B2076EAC1B0FD7FE00C3A4F7 /* spark.png */,
 			);
 			path = FiftyCans;
 			sourceTree = "<group>";
@@ -222,8 +228,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2076EAE1B0FD7FE00C3A4F7 /* spark.png in Resources */,
 				FC3169D11AB353D2000AFD8D /* LaunchScreen.xib in Resources */,
 				B22BB8771B06627D00AE6BF1 /* console-color.png in Resources */,
+				B2076EAD1B0FD7FE00C3A4F7 /* DSOExplosion.sks in Resources */,
 				FC3169CE1AB353D2000AFD8D /* Images.xcassets in Resources */,
 				B22BB87B1B0678AC00AE6BF1 /* laser.png in Resources */,
 				B22BB83E1B064B0300AE6BF1 /* can-tuna.png in Resources */,

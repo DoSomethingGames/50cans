@@ -94,6 +94,9 @@ static inline CGPoint rwNormalize(CGPoint a) {
     SKAction * actionMove = [SKAction moveTo:CGPointMake(-can.size.width/2, actualY) duration:actualDuration];
     SKAction * actionMoveDone = [SKAction removeFromParent];
     [can runAction:[SKAction sequence:@[actionMove, actionMoveDone]]];
+    SKAction *oneRevolution = [SKAction rotateByAngle:-M_PI*2 duration: 5.0];
+    SKAction *repeat = [SKAction repeatActionForever:oneRevolution];
+    [can runAction:repeat];
 }
 
 - (void)updateWithTimeSinceLastUpdate:(CFTimeInterval)timeSinceLast {
@@ -152,6 +155,11 @@ static inline CGPoint rwNormalize(CGPoint a) {
     }
     [projectile removeFromParent];
     [can removeFromParent];
+    SKEmitterNode *emitter =  [NSKeyedUnarchiver unarchiveObjectWithFile:[[NSBundle mainBundle] pathForResource:@"DSOExplosion" ofType:@"sks"]];
+    emitter.position = projectile.position;
+    [self addChild:emitter];
+    [emitter runAction:[SKAction sequence:@[ [SKAction fadeOutWithDuration:1], [SKAction waitForDuration:3], [SKAction removeFromParent] ]]];
+
     self.score++;
     [self.gameVC updateScore:self.score];
     if (self.score == winCount) {
