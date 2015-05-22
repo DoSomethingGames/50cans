@@ -155,6 +155,11 @@ static inline CGPoint rwNormalize(CGPoint a) {
     }
     [projectile removeFromParent];
     [can removeFromParent];
+    SKEmitterNode *emitter =  [NSKeyedUnarchiver unarchiveObjectWithFile:[[NSBundle mainBundle] pathForResource:@"DSOExplosion" ofType:@"sks"]];
+    emitter.position = projectile.position;
+    [self addChild:emitter];
+    [emitter runAction:[SKAction sequence:@[ [SKAction fadeOutWithDuration:1], [SKAction waitForDuration:3], [SKAction removeFromParent] ]]];
+
     self.score++;
     [self.gameVC updateScore:self.score];
     if (self.score == winCount) {
