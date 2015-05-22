@@ -147,6 +147,9 @@ static inline CGPoint rwNormalize(CGPoint a) {
 }
 
 - (void)projectile:(SKSpriteNode *)projectile didCollideWithCan:(SKSpriteNode *)can {
+    if (self.isGameOver) {
+        return;
+    }
     [projectile removeFromParent];
     [can removeFromParent];
     self.score++;
