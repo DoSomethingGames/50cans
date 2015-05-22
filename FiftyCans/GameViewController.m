@@ -60,6 +60,22 @@
     self.scoreLabel.text = [NSString stringWithFormat:@"%li", score];
 }
 
+- (void)displayGameOver{
+    UIAlertController *alertController = [UIAlertController
+                                          alertControllerWithTitle:@"You win"
+                                          message:@"Great job!"
+                                          preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAction = [UIAlertAction
+                               actionWithTitle:NSLocalizedString(@"Play again", @"OK action")
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction *action)
+                               {
+                                   [self viewDidLoad];
+                               }];
+
+    [alertController addAction:okAction];
+    [self presentViewController:alertController animated:YES completion:nil];
+}
 - (BOOL)shouldAutorotate
 {
     return YES;

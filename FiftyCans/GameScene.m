@@ -153,6 +153,7 @@ static inline CGPoint rwNormalize(CGPoint a) {
     [self.gameVC updateScore:self.score];
     if (self.score == winCount) {
         self.isGameOver = YES;
+        [self.gameVC displayGameOver];
     }
 }
 

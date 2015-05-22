@@ -12,5 +12,6 @@
 @interface GameViewController : UIViewController
 
 - (void)updateScore:(NSUInteger)score;
+- (void)displayGameOver;
 
 @end
