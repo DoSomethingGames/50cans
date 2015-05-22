@@ -28,6 +28,10 @@
 
 @end
 
+@interface GameViewController()
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@end
+
 @implementation GameViewController
 
 - (void)viewDidLoad
@@ -44,9 +48,16 @@
     // Create and configure the scene.
     GameScene *scene = [GameScene unarchiveFromFile:@"GameScene"];
     scene.scaleMode = SKSceneScaleModeAspectFill;
+    scene.gameVC = self;
+
+    [self updateScore:0];
     
     // Present the scene.
     [skView presentScene:scene];
+}
+
+- (void)updateScore:(NSUInteger)score {
+    self.scoreLabel.text = [NSString stringWithFormat:@"%li", score];
 }
 
 - (BOOL)shouldAutorotate
