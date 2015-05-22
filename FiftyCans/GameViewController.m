@@ -28,6 +28,10 @@
 
 @end
 
+@interface GameViewController()
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@end
+
 @implementation GameViewController
 
 - (void)viewDidLoad
@@ -44,11 +48,34 @@
     // Create and configure the scene.
     GameScene *scene = [GameScene unarchiveFromFile:@"GameScene"];
     scene.scaleMode = SKSceneScaleModeAspectFill;
+    scene.gameVC = self;
+
+    [self updateScore:0];
     
     // Present the scene.
     [skView presentScene:scene];
 }
 
+- (void)updateScore:(NSUInteger)score {
+    self.scoreLabel.text = [NSString stringWithFormat:@"%li", score];
+}
+
+- (void)displayGameOver{
+    UIAlertController *alertController = [UIAlertController
+                                          alertControllerWithTitle:@"You win"
+                                          message:@"Great job!"
+                                          preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAction = [UIAlertAction
+                               actionWithTitle:NSLocalizedString(@"Play again", @"OK action")
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction *action)
+                               {
+                                   [self viewDidLoad];
+                               }];
+
+    [alertController addAction:okAction];
+    [self presentViewController:alertController animated:YES completion:nil];
+}
 - (BOOL)shouldAutorotate
 {
     return YES;

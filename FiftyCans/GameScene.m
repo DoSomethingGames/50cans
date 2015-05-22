@@ -9,8 +9,11 @@
 #import "GameScene.h"
 static const uint32_t projectileCategory     =  0x1 << 0;
 static const uint32_t canCategory        =  0x1 << 1;
+static const NSUInteger winCount = 10;
 
 @interface GameScene() <SKPhysicsContactDelegate>
+@property (nonatomic, assign) NSUInteger score;
+@property (nonatomic, assign) BOOL isGameOver;
 @property (nonatomic) SKSpriteNode *player;
 @property (nonatomic) NSTimeInterval lastSpawnTimeInterval;
 @property (nonatomic) NSTimeInterval lastUpdateTimeInterval;
@@ -47,6 +50,11 @@ static inline CGPoint rwNormalize(CGPoint a) {
     self.player = [SKSpriteNode spriteNodeWithImageNamed:@"console-color"];
     self.player.position = CGPointMake(200, 150);
     [self addChild:self.player];
+
+    self.score = 0;
+    self.isGameOver = NO;
+    [self.gameVC updateScore:self.score];
+
     self.physicsWorld.gravity = CGVectorMake(0,0);
     self.physicsWorld.contactDelegate = self;
     self.canImages = [[NSMutableArray alloc] init];
@@ -89,7 +97,9 @@ static inline CGPoint rwNormalize(CGPoint a) {
 }
 
 - (void)updateWithTimeSinceLastUpdate:(CFTimeInterval)timeSinceLast {
-
+    if (self.isGameOver) {
+        return;
+    }
     self.lastSpawnTimeInterval += timeSinceLast;
     if (self.lastSpawnTimeInterval > 1) {
         self.lastSpawnTimeInterval = 0;
@@ -98,7 +108,9 @@ static inline CGPoint rwNormalize(CGPoint a) {
 }
 
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-
+    if (self.isGameOver) {
+        return;
+    }
     // Choose one of the touches to work with
     UITouch * touch = [touches anyObject];
     CGPoint location = [touch locationInNode:self];
@@ -135,8 +147,17 @@ static inline CGPoint rwNormalize(CGPoint a) {
 }
 
 - (void)projectile:(SKSpriteNode *)projectile didCollideWithCan:(SKSpriteNode *)can {
+    if (self.isGameOver) {
+        return;
+    }
     [projectile removeFromParent];
     [can removeFromParent];
+    self.score++;
+    [self.gameVC updateScore:self.score];
+    if (self.score == winCount) {
+        self.isGameOver = YES;
+        [self.gameVC displayGameOver];
+    }
 }
 
 - (void)didBeginContact:(SKPhysicsContact *)contact
