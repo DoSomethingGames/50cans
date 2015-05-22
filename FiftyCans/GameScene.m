@@ -94,6 +94,9 @@ static inline CGPoint rwNormalize(CGPoint a) {
     SKAction * actionMove = [SKAction moveTo:CGPointMake(-can.size.width/2, actualY) duration:actualDuration];
     SKAction * actionMoveDone = [SKAction removeFromParent];
     [can runAction:[SKAction sequence:@[actionMove, actionMoveDone]]];
+    SKAction *oneRevolution = [SKAction rotateByAngle:-M_PI*2 duration: 5.0];
+    SKAction *repeat = [SKAction repeatActionForever:oneRevolution];
+    [can runAction:repeat];
 }
 
 - (void)updateWithTimeSinceLastUpdate:(CFTimeInterval)timeSinceLast {
