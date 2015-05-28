@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LVB-YS-i5n">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Fge-Md-2Ir">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -30,12 +30,49 @@
                             <constraint firstItem="20K-wG-qTQ" firstAttribute="trailing" secondItem="bdc-N1-crn" secondAttribute="trailingMargin" id="kmC-Dr-gJy"/>
                         </constraints>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem systemItem="pause" id="viJ-9U-Iul">
+                            <connections>
+                                <action selector="pauseTapped:" destination="LVB-YS-i5n" id="ZMD-a5-bqq"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="play" id="EJZ-wP-Tgt">
+                            <connections>
+                                <action selector="playTapped:" destination="LVB-YS-i5n" id="ggX-6B-uS9"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="Czp-36-D0C"/>
                     <connections>
+                        <outlet property="pauseButton" destination="viJ-9U-Iul" id="I5O-23-L8O"/>
+                        <outlet property="playButton" destination="EJZ-wP-Tgt" id="Tta-Ep-OVB"/>
                         <outlet property="scoreLabel" destination="20K-wG-qTQ" id="ftF-49-mn3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1152" y="348"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JaD-SA-ovV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" toolbarHidden="NO" id="Fge-Md-2Ir" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wZj-Cx-zzD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="m6b-Xh-JpQ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="LVB-YS-i5n" kind="relationship" relationship="rootViewController" id="upX-PG-XWg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cbf-kb-dTy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="470" y="348"/>
         </scene>
     </scenes>
 </document>
