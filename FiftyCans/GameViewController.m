@@ -34,6 +34,7 @@
 - (IBAction)pauseTapped:(id)sender;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *playButton;
 - (IBAction)playTapped:(id)sender;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *scoreButton;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @end
 
@@ -64,7 +65,7 @@
 }
 
 - (void)updateScore:(NSUInteger)score {
-    self.scoreLabel.text = [NSString stringWithFormat:@"%li", score];
+    self.scoreButton.title = [NSString stringWithFormat:@"%li cans", score];
 }
 
 - (void)displayGameOver{

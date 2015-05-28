@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Fge-Md-2Ir">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Game View Controller-->
@@ -16,19 +15,7 @@
                     <view key="view" contentMode="scaleToFill" id="bdc-N1-crn" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20K-wG-qTQ">
-                                <rect key="frame" x="565" y="28" width="19" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="20K-wG-qTQ" firstAttribute="top" secondItem="PCf-gQ-wO7" secondAttribute="bottom" constant="8" id="BQ4-Fu-bae"/>
-                            <constraint firstItem="20K-wG-qTQ" firstAttribute="trailing" secondItem="bdc-N1-crn" secondAttribute="trailingMargin" id="kmC-Dr-gJy"/>
-                        </constraints>
                     </view>
                     <toolbarItems>
                         <barButtonItem systemItem="pause" id="viJ-9U-Iul">
@@ -41,12 +28,16 @@
                                 <action selector="playTapped:" destination="LVB-YS-i5n" id="ggX-6B-uS9"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="ye0-4C-hJs"/>
+                        <barButtonItem enabled="NO" title="Item" id="VeV-Sj-m4E">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="Czp-36-D0C"/>
                     <connections>
                         <outlet property="pauseButton" destination="viJ-9U-Iul" id="I5O-23-L8O"/>
                         <outlet property="playButton" destination="EJZ-wP-Tgt" id="Tta-Ep-OVB"/>
-                        <outlet property="scoreLabel" destination="20K-wG-qTQ" id="ftF-49-mn3"/>
+                        <outlet property="scoreButton" destination="VeV-Sj-m4E" id="T8m-zh-HNt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
