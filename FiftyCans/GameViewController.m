@@ -29,6 +29,12 @@
 @end
 
 @interface GameViewController()
+@property (strong, nonatomic) GameScene *scene;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *pauseButton;
+- (IBAction)pauseTapped:(id)sender;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *playButton;
+- (IBAction)playTapped:(id)sender;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *scoreButton;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @end
 
@@ -46,18 +52,20 @@
     skView.ignoresSiblingOrder = YES;
     
     // Create and configure the scene.
-    GameScene *scene = [GameScene unarchiveFromFile:@"GameScene"];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
-    scene.gameVC = self;
+    self.scene = [GameScene unarchiveFromFile:@"GameScene"];
+    self.scene.scaleMode = SKSceneScaleModeAspectFill;
+    self.scene.gameVC = self;
 
     [self updateScore:0];
     
     // Present the scene.
-    [skView presentScene:scene];
+    [skView presentScene:self.scene];
+
+    self.playButton.enabled = FALSE;
 }
 
 - (void)updateScore:(NSUInteger)score {
-    self.scoreLabel.text = [NSString stringWithFormat:@"%li", score];
+    self.scoreButton.title = [NSString stringWithFormat:@"%li cans", score];
 }
 
 - (void)displayGameOver{
@@ -100,4 +108,14 @@
     return YES;
 }
 
+- (IBAction)pauseTapped:(id)sender {
+    self.scene.view.paused = YES;
+    self.pauseButton.enabled = NO;
+    self.playButton.enabled = YES;
+}
+- (IBAction)playTapped:(id)sender {
+    self.scene.view.paused = NO;
+    self.pauseButton.enabled = YES;
+    self.playButton.enabled = NO;
+}
 @end
