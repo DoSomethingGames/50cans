@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B201A7E61B62B2090058B67F /* laser.wav in Resources */ = {isa = PBXBuildFile; fileRef = B201A7E51B62B2090058B67F /* laser.wav */; };
 		B2076EAD1B0FD7FE00C3A4F7 /* DSOExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = B2076EAB1B0FD7FE00C3A4F7 /* DSOExplosion.sks */; };
 		B2076EAE1B0FD7FE00C3A4F7 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = B2076EAC1B0FD7FE00C3A4F7 /* spark.png */; };
 		B22BB83E1B064B0300AE6BF1 /* can-tuna.png in Resources */ = {isa = PBXBuildFile; fileRef = B22BB83D1B064B0300AE6BF1 /* can-tuna.png */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B201A7E51B62B2090058B67F /* laser.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = laser.wav; path = Resources/Sounds/laser.wav; sourceTree = "<group>"; };
 		B2076EAB1B0FD7FE00C3A4F7 /* DSOExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = DSOExplosion.sks; sourceTree = "<group>"; };
 		B2076EAC1B0FD7FE00C3A4F7 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		B22BB83D1B064B0300AE6BF1 /* can-tuna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "can-tuna.png"; path = "Resources/Images/can-tuna.png"; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				B201A7E31B62B0040058B67F /* Images */,
+				B201A7E41B62B1E20058B67F /* Sounds */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -97,6 +100,14 @@
 				B22BB87A1B0678AC00AE6BF1 /* laser.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		B201A7E41B62B1E20058B67F /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				B201A7E51B62B2090058B67F /* laser.wav */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 		FC3169AF1AB353D1000AFD8D = {
@@ -253,6 +264,7 @@
 				B22BB87B1B0678AC00AE6BF1 /* laser.png in Resources */,
 				B22BB83E1B064B0300AE6BF1 /* can-tuna.png in Resources */,
 				B2A1F5221B06E80000BFE6CF /* can-soup.png in Resources */,
+				B201A7E61B62B2090058B67F /* laser.wav in Resources */,
 				FC3169C61AB353D2000AFD8D /* DSOGameScene.sks in Resources */,
 				B2A1F5241B06E83500BFE6CF /* can-soda.png in Resources */,
 				FC3169CC1AB353D2000AFD8D /* Main.storyboard in Resources */,

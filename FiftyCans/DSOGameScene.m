@@ -146,6 +146,7 @@ static inline CGPoint rwNormalize(CGPoint a) {
     SKAction * actionMove = [SKAction moveTo:realDest duration:realMoveDuration];
     SKAction * actionMoveDone = [SKAction removeFromParent];
     [projectile runAction:[SKAction sequence:@[actionMove, actionMoveDone]]];
+    [self runAction:[SKAction playSoundFileNamed:@"laser.wav" waitForCompletion:NO]];
     
 }
 
