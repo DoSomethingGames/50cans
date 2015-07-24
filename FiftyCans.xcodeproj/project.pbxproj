@@ -38,11 +38,11 @@
 /* Begin PBXFileReference section */
 		B2076EAB1B0FD7FE00C3A4F7 /* DSOExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = DSOExplosion.sks; sourceTree = "<group>"; };
 		B2076EAC1B0FD7FE00C3A4F7 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
-		B22BB83D1B064B0300AE6BF1 /* can-tuna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "can-tuna.png"; sourceTree = "<group>"; };
-		B22BB8761B06627D00AE6BF1 /* console-color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "console-color.png"; sourceTree = "<group>"; };
-		B22BB87A1B0678AC00AE6BF1 /* laser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laser.png; sourceTree = "<group>"; };
-		B2A1F5211B06E80000BFE6CF /* can-soup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "can-soup.png"; sourceTree = "<group>"; };
-		B2A1F5231B06E83500BFE6CF /* can-soda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "can-soda.png"; sourceTree = "<group>"; };
+		B22BB83D1B064B0300AE6BF1 /* can-tuna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "can-tuna.png"; path = "Resources/Images/can-tuna.png"; sourceTree = "<group>"; };
+		B22BB8761B06627D00AE6BF1 /* console-color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "console-color.png"; path = "Resources/Images/console-color.png"; sourceTree = "<group>"; };
+		B22BB87A1B0678AC00AE6BF1 /* laser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = laser.png; path = Resources/Images/laser.png; sourceTree = "<group>"; };
+		B2A1F5211B06E80000BFE6CF /* can-soup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "can-soup.png"; path = "Resources/Images/can-soup.png"; sourceTree = "<group>"; };
+		B2A1F5231B06E83500BFE6CF /* can-soda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "can-soda.png"; path = "Resources/Images/can-soda.png"; sourceTree = "<group>"; };
 		FC3169B81AB353D2000AFD8D /* FiftyCans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiftyCans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3169BC1AB353D2000AFD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC3169BD1AB353D2000AFD8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -79,6 +79,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B201A7E21B62AFC00058B67F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B201A7E31B62B0040058B67F /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B201A7E31B62B0040058B67F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B2A1F5231B06E83500BFE6CF /* can-soda.png */,
+				B22BB83D1B064B0300AE6BF1 /* can-tuna.png */,
+				B2A1F5211B06E80000BFE6CF /* can-soup.png */,
+				B22BB8761B06627D00AE6BF1 /* console-color.png */,
+				B22BB87A1B0678AC00AE6BF1 /* laser.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		FC3169AF1AB353D1000AFD8D = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +133,7 @@
 				FC3169BB1AB353D2000AFD8D /* Supporting Files */,
 				B2076EAB1B0FD7FE00C3A4F7 /* DSOExplosion.sks */,
 				B2076EAC1B0FD7FE00C3A4F7 /* spark.png */,
+				B201A7E21B62AFC00058B67F /* Resources */,
 			);
 			path = FiftyCans;
 			sourceTree = "<group>";
@@ -120,11 +141,6 @@
 		FC3169BB1AB353D2000AFD8D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B2A1F5231B06E83500BFE6CF /* can-soda.png */,
-				B22BB83D1B064B0300AE6BF1 /* can-tuna.png */,
-				B2A1F5211B06E80000BFE6CF /* can-soup.png */,
-				B22BB8761B06627D00AE6BF1 /* console-color.png */,
-				B22BB87A1B0678AC00AE6BF1 /* laser.png */,
 				FC3169BC1AB353D2000AFD8D /* Info.plist */,
 				FC3169BD1AB353D2000AFD8D /* main.m */,
 			);
