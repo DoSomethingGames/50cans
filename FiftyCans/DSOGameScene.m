@@ -146,6 +146,7 @@ static inline CGPoint rwNormalize(CGPoint a) {
     SKAction * actionMove = [SKAction moveTo:realDest duration:realMoveDuration];
     SKAction * actionMoveDone = [SKAction removeFromParent];
     [projectile runAction:[SKAction sequence:@[actionMove, actionMoveDone]]];
+    [self runAction:[SKAction playSoundFileNamed:@"laser.wav" waitForCompletion:NO]];
     
 }
 
@@ -159,7 +160,7 @@ static inline CGPoint rwNormalize(CGPoint a) {
     emitter.position = projectile.position;
     [self addChild:emitter];
     [emitter runAction:[SKAction sequence:@[ [SKAction fadeOutWithDuration:1], [SKAction waitForDuration:3], [SKAction removeFromParent] ]]];
-
+    [self runAction:[SKAction playSoundFileNamed:@"explosion.wav" waitForCompletion:NO]];
     self.score++;
     [self.gameVC updateScore:self.score];
     if (self.score == winCount) {
