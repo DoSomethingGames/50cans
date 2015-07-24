@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 DoSomething.org. All rights reserved.
 //
 
-#import "GameViewController.h"
-#import "GameScene.h"
+#import "DSOGameViewController.h"
+#import "DSOGameScene.h"
 
 @implementation SKScene (Unarchive)
 
@@ -28,8 +28,8 @@
 
 @end
 
-@interface GameViewController()
-@property (strong, nonatomic) GameScene *scene;
+@interface DSOGameViewController()
+@property (strong, nonatomic) DSOGameScene *scene;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *pauseButton;
 - (IBAction)pauseTapped:(id)sender;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *playButton;
@@ -38,7 +38,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @end
 
-@implementation GameViewController
+@implementation DSOGameViewController
 
 - (void)viewDidLoad
 {
@@ -52,7 +52,7 @@
     skView.ignoresSiblingOrder = YES;
     
     // Create and configure the scene.
-    self.scene = [GameScene unarchiveFromFile:@"GameScene"];
+    self.scene = [DSOGameScene unarchiveFromFile:@"DSOGameScene"];
     self.scene.scaleMode = SKSceneScaleModeAspectFill;
     self.scene.gameVC = self;
 
@@ -96,12 +96,6 @@
     } else {
         return UIInterfaceOrientationMaskAll;
     }
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
 }
 
 - (BOOL)prefersStatusBarHidden {

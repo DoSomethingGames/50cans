@@ -7,8 +7,8 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
-#import "GameViewController.h"
+#import "DSOGameViewController.h"
 
-@interface GameScene : SKScene
-@property (strong, nonatomic) GameViewController *gameVC;
+@interface DSOGameScene : SKScene
+@property (strong, nonatomic) DSOGameViewController *gameVC;
 @end

@@ -16,9 +16,9 @@
 		B2A1F5241B06E83500BFE6CF /* can-soda.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A1F5231B06E83500BFE6CF /* can-soda.png */; };
 		FC3169BE1AB353D2000AFD8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3169BD1AB353D2000AFD8D /* main.m */; };
 		FC3169C11AB353D2000AFD8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3169C01AB353D2000AFD8D /* AppDelegate.m */; };
-		FC3169C41AB353D2000AFD8D /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3169C31AB353D2000AFD8D /* GameScene.m */; };
-		FC3169C61AB353D2000AFD8D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FC3169C51AB353D2000AFD8D /* GameScene.sks */; };
-		FC3169C91AB353D2000AFD8D /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3169C81AB353D2000AFD8D /* GameViewController.m */; };
+		FC3169C41AB353D2000AFD8D /* DSOGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3169C31AB353D2000AFD8D /* DSOGameScene.m */; };
+		FC3169C61AB353D2000AFD8D /* DSOGameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FC3169C51AB353D2000AFD8D /* DSOGameScene.sks */; };
+		FC3169C91AB353D2000AFD8D /* DSOGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3169C81AB353D2000AFD8D /* DSOGameViewController.m */; };
 		FC3169CC1AB353D2000AFD8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3169CA1AB353D2000AFD8D /* Main.storyboard */; };
 		FC3169CE1AB353D2000AFD8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3169CD1AB353D2000AFD8D /* Images.xcassets */; };
 		FC3169D11AB353D2000AFD8D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC3169CF1AB353D2000AFD8D /* LaunchScreen.xib */; };
@@ -48,11 +48,11 @@
 		FC3169BD1AB353D2000AFD8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC3169BF1AB353D2000AFD8D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FC3169C01AB353D2000AFD8D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FC3169C21AB353D2000AFD8D /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
-		FC3169C31AB353D2000AFD8D /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
-		FC3169C51AB353D2000AFD8D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		FC3169C71AB353D2000AFD8D /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
-		FC3169C81AB353D2000AFD8D /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		FC3169C21AB353D2000AFD8D /* DSOGameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSOGameScene.h; sourceTree = "<group>"; };
+		FC3169C31AB353D2000AFD8D /* DSOGameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSOGameScene.m; sourceTree = "<group>"; };
+		FC3169C51AB353D2000AFD8D /* DSOGameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = DSOGameScene.sks; sourceTree = "<group>"; };
+		FC3169C71AB353D2000AFD8D /* DSOGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSOGameViewController.h; sourceTree = "<group>"; };
+		FC3169C81AB353D2000AFD8D /* DSOGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSOGameViewController.m; sourceTree = "<group>"; };
 		FC3169CB1AB353D2000AFD8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC3169CD1AB353D2000AFD8D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FC3169D01AB353D2000AFD8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -102,11 +102,11 @@
 			children = (
 				FC3169BF1AB353D2000AFD8D /* AppDelegate.h */,
 				FC3169C01AB353D2000AFD8D /* AppDelegate.m */,
-				FC3169C21AB353D2000AFD8D /* GameScene.h */,
-				FC3169C31AB353D2000AFD8D /* GameScene.m */,
-				FC3169C51AB353D2000AFD8D /* GameScene.sks */,
-				FC3169C71AB353D2000AFD8D /* GameViewController.h */,
-				FC3169C81AB353D2000AFD8D /* GameViewController.m */,
+				FC3169C21AB353D2000AFD8D /* DSOGameScene.h */,
+				FC3169C31AB353D2000AFD8D /* DSOGameScene.m */,
+				FC3169C51AB353D2000AFD8D /* DSOGameScene.sks */,
+				FC3169C71AB353D2000AFD8D /* DSOGameViewController.h */,
+				FC3169C81AB353D2000AFD8D /* DSOGameViewController.m */,
 				FC3169CA1AB353D2000AFD8D /* Main.storyboard */,
 				FC3169CD1AB353D2000AFD8D /* Images.xcassets */,
 				FC3169CF1AB353D2000AFD8D /* LaunchScreen.xib */,
@@ -237,7 +237,7 @@
 				B22BB87B1B0678AC00AE6BF1 /* laser.png in Resources */,
 				B22BB83E1B064B0300AE6BF1 /* can-tuna.png in Resources */,
 				B2A1F5221B06E80000BFE6CF /* can-soup.png in Resources */,
-				FC3169C61AB353D2000AFD8D /* GameScene.sks in Resources */,
+				FC3169C61AB353D2000AFD8D /* DSOGameScene.sks in Resources */,
 				B2A1F5241B06E83500BFE6CF /* can-soda.png in Resources */,
 				FC3169CC1AB353D2000AFD8D /* Main.storyboard in Resources */,
 			);
@@ -257,9 +257,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC3169C91AB353D2000AFD8D /* GameViewController.m in Sources */,
+				FC3169C91AB353D2000AFD8D /* DSOGameViewController.m in Sources */,
 				FC3169C11AB353D2000AFD8D /* AppDelegate.m in Sources */,
-				FC3169C41AB353D2000AFD8D /* GameScene.m in Sources */,
+				FC3169C41AB353D2000AFD8D /* DSOGameScene.m in Sources */,
 				FC3169BE1AB353D2000AFD8D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

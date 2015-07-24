@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
 
-@interface GameViewController : UIViewController
+@interface DSOGameViewController : UIViewController
 
 - (void)updateScore:(NSUInteger)score;
 - (void)displayGameOver;

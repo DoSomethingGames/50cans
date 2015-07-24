@@ -6,12 +6,12 @@
 //  Copyright (c) 2015 DoSomething.org. All rights reserved.
 //
 
-#import "GameScene.h"
+#import "DSOGameScene.h"
 static const uint32_t projectileCategory     =  0x1 << 0;
 static const uint32_t canCategory        =  0x1 << 1;
 static const NSUInteger winCount = 10;
 
-@interface GameScene() <SKPhysicsContactDelegate>
+@interface DSOGameScene() <SKPhysicsContactDelegate>
 @property (nonatomic, assign) NSUInteger score;
 @property (nonatomic, assign) BOOL isGameOver;
 @property (nonatomic) SKSpriteNode *player;
@@ -42,7 +42,7 @@ static inline CGPoint rwNormalize(CGPoint a) {
     return CGPointMake(a.x / length, a.y / length);
 }
 
-@implementation GameScene
+@implementation DSOGameScene
 
 -(void)didMoveToView:(SKView *)view {
 
